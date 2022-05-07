@@ -1,0 +1,19 @@
+
+GET http://localhost:4004/admin/Products
+###
+
+GET http://localhost:4004/admin/Products/?expand=ID
+
+                                                                        
+###
+POST http://localhost:4004/admin/Products
+Content-Type: application/json
+
+{ID: 10}
+
+###
+POST http://localhost:4004/admin/Products
+Content-Type: application/json
+
+{"ID": 1001, "title": "Miniatur Taycan", 
+"descr": "Miniatur Taycan erhältlich", "stock": 17};
